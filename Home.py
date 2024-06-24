@@ -1,23 +1,25 @@
+# bibliotecas
 import streamlit as st
 from PIL import Image
 
+# confifuração da página
 st.set_page_config(
     page_title='Home',
-    page_icon='🎲',
-    layout='centered',
-)
+    page_icon=':material/home:',
+    layout='centered'
+                                )
 
 
 # imagem (logo)
-#image_path = '/home/matheusmb/CDS/FTC/'
 image = Image.open('logo_alvo.jpg')
-st.sidebar.image(image, width=120)
+st.sidebar.image(image, width=100)
 
 
 # cabeçalho
 st.sidebar.markdown('# Cury Company')
 st.sidebar.markdown('## Fastest Delivery in Town')
-st.sidebar.markdown('''___''')
+
+st.sidebar.divider()
 
 st.write('# Curry Company Growth Dashboard')
 
@@ -38,8 +40,7 @@ st.markdown(
         ----------------------------------------------------
 
         ### Ask for Help
-        - Time de Data Science no Discord
-            - @meigarom
+        - Contato no Discord
             - @matheusbaumg
 
 ''')
